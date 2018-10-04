@@ -9,6 +9,14 @@ userService.saveUsers = function(users) {
 
 userService.getUser = function(userId) {
     var users = dao.getUsers();
+
+    _.forEach(users, function (value, key) {
+        console.log(key, value);
+        users[key] = _.filter(users[key], function (timestamp) {
+            return timestamp > 0;
+        });
+    });
+
     return _.sortBy(users[userId]);
 };
 
