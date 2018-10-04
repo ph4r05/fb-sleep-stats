@@ -15,8 +15,10 @@ userService.getUser = function(userId) {
 userService.getList = function(accessToken) {
     var users = dao.getUsers();
     var userIds = Object.keys(users);
+    console.log('Users: ', userIds);
     return facebookService.getUsers(accessToken, userIds)
         .then(function(facebookUsers) {
+            console.info('Something', facebookUsers);
             return _(facebookUsers)
                 .map(function(user) {
                     user.count = users[user.id].length;

@@ -3,8 +3,10 @@ var userService = require('../services/user');
 var userController = {};
 userController.listUsers = function(req, res) {
     var accessToken = req.cookies.fbAccessToken;
+    console.log('access token: ', accessToken);
     return userService.getList(accessToken)
         .then(function(response) {
+            console.log('List loaded: ', response);
             res.json(response);
         })
         .catch(function(err) {

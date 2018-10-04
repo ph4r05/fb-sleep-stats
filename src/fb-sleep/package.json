@@ -1,0 +1,56 @@
+{
+  "_from": "fb-sleep@2.3.0",
+  "_id": "fb-sleep@2.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-DGA9u9KI1AH70VtX7/w9ojWmdcQJcRKIcGB8XZKvBqshqKepZE02Dhyw1NKG7Kr3BR9U4d5oA13T2E6JSJn0/Q==",
+  "_location": "/fb-sleep",
+  "_phantomChildren": {
+    "request": "2.88.0"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "fb-sleep@2.3.0",
+    "name": "fb-sleep",
+    "escapedName": "fb-sleep",
+    "rawSpec": "2.3.0",
+    "saveSpec": null,
+    "fetchSpec": "2.3.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/fb-sleep/-/fb-sleep-2.3.0.tgz",
+  "_shasum": "0516b871625c144705c09a97a1bda04fdeccf100",
+  "_spec": "fb-sleep@2.3.0",
+  "_where": "/Users/dusanklinec/workspace/fb-sleep-stats",
+  "author": {
+    "name": "Søren Louv-Jansen",
+    "email": "sorenlouv@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/sqren/fb-sleep/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "bluebird": "3.3.3",
+    "cheerio": "0.20.0",
+    "lodash": "4.5.1",
+    "request-promise": "2.0.1"
+  },
+  "deprecated": false,
+  "description": "",
+  "devDependencies": {},
+  "homepage": "https://github.com/sqren/fb-sleep#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "fb-sleep",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sqren/fb-sleep.git"
+  },
+  "scripts": {
+    "debug": "node-debug --no-preload ./example.js"
+  },
+  "version": "2.3.0"
+}
